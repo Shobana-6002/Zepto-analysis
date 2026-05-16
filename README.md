@@ -1,6 +1,3 @@
-<img width="1920" height="913" alt="image-2" src="https://github.com/user-attachments/assets/f8432946-824a-4db7-8e83-a955e370777f" />
-<img width="1920" height="907" alt="image-1" src="https://github.com/user-attachments/assets/daf6ace3-8303-484c-9a33-fddd2a6d18ea" />
-<img width="1623" height="873" alt="image" src="https://github.com/user-attachments/assets/bf541f24-9ba0-40e7-a501-007243310d09" />
 # 🛒 Zepto E-Commerce Data Analysis
 
 A complete end-to-end data analytics project analyzing Zepto's product catalog with 3,731 SKUs across 14 categories.Built to demonstrate real-world data analytics skills for portfolio purposes.
@@ -132,15 +129,15 @@ streamlit run app.py
 
 ### Power BI Dashboard
 
-![Bi Dashboard image](screenshots\image.png)
+<img width="1623" height="873" alt="image" src="https://github.com/user-attachments/assets/bf541f24-9ba0-40e7-a501-007243310d09" />
 
 ### Streamlit Dashboard — General Overview
 
-![Dashboard image](screenshots\image-1.png)
+<img width="1920" height="907" alt="image-1" src="https://github.com/user-attachments/assets/daf6ace3-8303-484c-9a33-fddd2a6d18ea" />
 
 ### Streamlit Dashboard — Category Analysis
 
-![categorical analysis image](screenshots\image-2.png)
+<img width="1920" height="913" alt="image-2" src="https://github.com/user-attachments/assets/f8432946-824a-4db7-8e83-a955e370777f" />
 
 ## 👩‍💻 Author
 
