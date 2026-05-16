@@ -103,7 +103,7 @@ Calculated total inventory weight per category to identify heaviest categories f
 ## 🚀 How to Run the Streamlit Dashboard
 
 **Step 1 — Clone the repository**
-git clone https://github.com/Shobana-6002/zepto-analytics.git
+git clone https://github.com/Shobana-2025/zepto-analytics.git
 
 **Step 2 — Navigate to dashboard folder**
 cd zepto-analytics/dashboard
@@ -144,7 +144,7 @@ streamlit run app.py
 _D.Shobana_
 
 - LinkedIn: [www.linkedin.com/in/shobana-d-96287b374]
-- GitHub: [your github url]
+- GitHub: [https://github.com/Shobana-2025]
 
 ## 📄 License
 
