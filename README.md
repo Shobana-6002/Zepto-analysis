@@ -16,6 +16,7 @@ This project analyzes a Zepto e-commerce dataset to extract actionable business 
 | Streamlit                            | Interactive web dashboard       |
 | Power BI                             | Business intelligence dashboard |
 
+
 ## 📁 Project Structure
 
 zepto-analytics/
@@ -23,18 +24,20 @@ zepto-analytics/
 │ └── zepto_queries.sql ← All SQL business queries
 ├── notebooks/
 │ └── Zepto_EDA.ipynb ← Python EDA notebook
-├── dashboard/
-│ ├── app.py ← Streamlit dashboard
-│ └── requirements.txt ← Required libraries
+│
+│────app.py ← Streamlit dashboard
+│────requirements.txt ← Required libraries
 ├── powerbi/
 │ └── Zepto_Dashboard.pbix ← Power BI dashboard
 └── README.md
+
 
 ## 🗄️ Dataset
 
 • _Source:_ Kaggle (Zepto product listings) [ Dataset Download link : https://www.kaggle.com/datasets/devshahoff/zepto-dataset]
 • _Size:_ 3,731 rows × 10 columns
 • _Key Columns:_ category, name, MRP, discount percent, available quantity, discounted selling price, weight in gmrs, out of stock status
+
 
 ## 🧹 Data Cleaning
 
@@ -43,6 +46,7 @@ zepto-analytics/
 • Fixed boolean column type issues
 • Verified null values across all columns
 • Created estimated revenue column [ selling price × available quantity ]
+
 
 ## 📊 SQL Business Questions Answered
 
@@ -78,6 +82,8 @@ Used CASE statements to classify products into Low, Medium, and Bulk weight cate
 
 Calculated total inventory weight per category to identify heaviest categories for warehouse management.
 
+
+
 ## 🔍 Key Business Insights
 
 • Cooking Essentials & Munchies contribute 35% of total revenue, indicating strong revenue concentration in a few categories.
@@ -87,6 +93,7 @@ Calculated total inventory weight per category to identify heaviest categories f
 • Meats, Fish & Eggs contains the lowest product variety (63 products) among all categories.
 
 • Approximately 12.14% of products are currently out of stock (~453 products unavailable).
+
 
 ## 💡 Business Recommendations
 
@@ -99,6 +106,7 @@ Calculated total inventory weight per category to identify heaviest categories f
 • Inventory distribution is uneven across categories, suggesting need for better planning.
 
 • Cooking Essentials & Munchies shows strong demand and revenue consistency, making it a strong candidate for category expansion and promotional focus.
+
 
 ## 🚀 How to Run the Streamlit Dashboard
 
@@ -125,9 +133,12 @@ DB_NAME=yourdatabasename
 **Step 6 — Run the app**
 streamlit run app.py
 
+
+
 ## 📸 Dashboard Screenshots
 
 ### Power BI Dashboard
+
 
 <img width="1623" height="873" alt="image" src="https://github.com/user-attachments/assets/bf541f24-9ba0-40e7-a501-007243310d09" />
 
