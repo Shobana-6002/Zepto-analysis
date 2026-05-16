@@ -7,6 +7,7 @@ from plotly.subplots import make_subplots
 import os
 from dotenv import load_dotenv
 load_dotenv()
+from pathlib import Path
 
 st.set_page_config(page_title="Zepto Dashbord",
                    page_icon=":shopping_cart:", layout='wide')
@@ -20,16 +21,8 @@ st.markdown(
 
 @st.cache_data
 def load_data():
-    user=os.getenv('DB_USER')
-    password=os.getenv('DB_PASSWORD')
-    host=os.getenv('DB_HOST')
-    port=os.getenv('DB_PORT')
-    db=os.getenv('DB_NAME')
-
-    engine = sqlalchemy.create_engine(
-        f"postgresql://{user}:{password}@{host}:{port}/{db}")
-    query = "SELECT * FROM Zepto"
-    df = pd.read_sql(query, engine)
+    data_path=Path("data\Zepto_data")
+    df = pd.read_csv(data_path)
     return df
 
 
