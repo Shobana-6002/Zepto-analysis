@@ -21,7 +21,7 @@ st.markdown(
 
 @st.cache_data
 def load_data():
-    data_path=Path("data\Zepto_data")
+    data_path=Path("data/Zepto_data")
     df = pd.read_csv(data_path)
     return df
 
