@@ -159,7 +159,7 @@ with tab3:
 #Stock Availablity")
 
     with col2:
-        final_df['outofstock_no']=(final_df['outofstock'].astype(str).str.upper()=='TRUE').astype(int)
+        final_df['outofstock_no']=(final_df['outofstock'].astype(str).str.upper()=='T').astype(int)
         stock_summary=final_df.groupby('category').agg(Total_products=('name','count'),out_of_stock=('outofstock_no',sum )).reset_index()
         stock_summary['out_of_stock%']= (stock_summary['out_of_stock']/stock_summary['Total_products'])*100
         stock_summary['in_stock%']=100-stock_summary['out_of_stock%']
@@ -217,7 +217,7 @@ with tab4:
 
 #Stock Status By Category
     with col3:
-        category_selected['stockstatus']= df['outofstock'].map({False: 'In Stock', True: 'Out of Stock'})
+        category_selected['stockstatus']= df['outofstock'].map({'f': 'In Stock', 't': 'Out of Stock'})
 
         stock_counts = category_selected['stockstatus'].value_counts(normalize=True)
         in_stock_percent = round(stock_counts.get('In Stock', 0) * 100,2)
