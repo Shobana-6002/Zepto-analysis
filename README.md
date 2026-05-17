@@ -6,6 +6,10 @@ A complete end-to-end data analytics project analyzing Zepto's product catalog w
 
 This project analyzes a Zepto e-commerce dataset to extract actionable business insights across pricing, inventory, revenue, and discount strategy using SQL, Python, and interactive dashboards.
 
+## Live Dashboard
+
+  https://zepto-analysis-7he6zyxqq7puue27bp9kjg.streamlit.app/
+
 ## 🛠️ Tools & Technologies
 
 | Tool                                 | Purpose                         |
